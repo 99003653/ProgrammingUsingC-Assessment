@@ -6,8 +6,26 @@ using System.Threading.Tasks;
 
 namespace ProblemThree_CompleteSolution_BL
 {
-    public class GourmetCoffeeShop : GourmetShop, ITaxCompute
+    public class GourmetOrganicShop : GourmetShop,ITaxCompute
     {
-        
+        public double TotalBillValue { get; set; }
+        public Dictionary<int, double> GourmetCoffeeshop(int ICode, string IName, Dictionary<int, double> price)
+        {
+            return price;
+        }
+        public double PayPerWeight(int weight)
+        {
+            
+            return 1;
+        }
+        public double PayPerPiece(int quantity)
+        {
+            return 1;
+        }
+        public int TaxOnTotalBill()
+
+        {
+            return 1;
+        }
     }
 }
