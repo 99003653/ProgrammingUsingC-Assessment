@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProblemTwo_CompilationError
 {
-    class DirectReport
+    class DirectReport :Employee
     {
         public Employee ReportsTo { get; set; }
         public string ProjectCode { get; set; }
