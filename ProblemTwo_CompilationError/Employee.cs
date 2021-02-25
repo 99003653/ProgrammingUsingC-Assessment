@@ -16,12 +16,19 @@ namespace ProblemTwo_CompilationError
 
         public Employee()
         {
+            EmpID = 0;
+            EmpName = null;
+            EmpLevel = 0;
+            
             //Default number of leaves credited is 2 per month based on date of joining to the current date
             NoOfLeaves= GetMonthDifference(DateOfJoining, DateTime.Now) * 2;
         }
         public Employee(int eID,string eName,int eLevel, DateTime eDoJ)
         {
-
+             this.productId = productId;
+            this.productName = productName;
+            this.quantity = quantity;
+            this.price = price;
         }
 
         public static int GetMonthDifference(DateTime startDate, DateTime endDate)
